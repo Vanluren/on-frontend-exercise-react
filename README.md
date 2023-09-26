@@ -10,12 +10,12 @@ The interview is structured in 3 phases:
 
 To run the project locally:
 
-- yarn install
-- yarn serve
+- `yarn install`
+- `yarn dev`
 
 To compile and minify for production
 
-- yarn build
+- `yarn build`
 
 ## 1) Task exploration (15 mins)
 
