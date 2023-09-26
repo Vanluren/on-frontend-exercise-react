@@ -1,6 +1,7 @@
 type ratingIncrease = Record<string, number>;
 
 export interface Answer {
+  id?: number;
   copy: string;
   nextQuestion: number | null;
   ratingIncrease: ratingIncrease;

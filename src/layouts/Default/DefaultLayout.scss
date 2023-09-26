@@ -1,0 +1,19 @@
+@import '@/assets/styles/_variables.scss';
+$header-height: 60px;
+
+.app {
+  height: calc(100vh - $header-height);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  height: $header-height;
+  padding: 10px;
+  background-color: $color-white;
+}
+
+.logo {
+  height: 100%;
+  cursor: pointer;
+}
