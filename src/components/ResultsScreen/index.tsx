@@ -1,8 +1,9 @@
-import { useQuizStore } from '@/contexts/QuizContext';
+import { useQuizContext } from '@/contexts/QuizContext';
 import { useMemo } from 'react';
 
 const ResultsScreen = () => {
-  const { shoes } = useQuizStore();
+  const { shoes } = useQuizContext();
+
   const sortedShoes = useMemo(() => shoes.sort((a, b) => b.rating - a.rating), [shoes]);
 
   return (

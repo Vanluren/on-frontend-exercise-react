@@ -49,6 +49,10 @@ export const QuizProvider: FunctionComponent<{ children: ReactNode }> = ({ child
   return <QuizContext.Provider value={contextValue}>{children}</QuizContext.Provider>;
 };
 
-export const useQuizStore = (): QuizContextValue => {
-  return useContext(QuizContext as React.Context<QuizContextValue>);
+export const useQuizContext = (): QuizContextValue => {
+  const context = useContext(QuizContext);
+  if (!context) {
+    throw new Error('useQuizStore must be used within a QuizProvider');
+  }
+  return context;
 };

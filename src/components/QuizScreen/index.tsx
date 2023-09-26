@@ -1,11 +1,11 @@
-import { useQuizStore } from '@/contexts/QuizContext';
+import { useQuizContext } from '@/contexts/QuizContext';
 import { Answer } from '@/types';
 import { useNavigate } from 'react-router-dom';
 import './QuizScreen.scss';
 
 const QuizScreen = () => {
   const navigate = useNavigate();
-  const { currentQuestion, nextQuestion, updateRatings } = useQuizStore();
+  const { currentQuestion, nextQuestion, updateRatings } = useQuizContext();
 
   function selectAnswer(answer: Answer): void {
     updateRatings(answer.ratingIncrease);
