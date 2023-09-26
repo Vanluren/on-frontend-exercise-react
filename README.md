@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+## Task overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The interview is structured in 3 phases:
 
-Currently, two official plugins are available:
+- task exploration
+- creating the algorithm
+- creating the frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Run the project
 
-## Expanding the ESLint configuration
+To run the project locally:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- yarn install
+- yarn serve
 
-- Configure the top-level `parserOptions` property like this:
+To compile and minify for production
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- yarn build
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 1) Task exploration (15 mins)
+
+Task exploration
+
+- familiarize with the code base
+- explain us how the app works so far
+
+## 2) Shoes quiz: the algorithm (40 mins)
+
+Build a quiz app to find the best fitting shoes.
+
+We have provided you with two JSON files (questions.json and shoes.json in the assets folder). Depending on the answer given to each question:
+
+- you update the ranking of the shoes. How much each shoe gains per answer is listed in the questions JSON file (ratingIncrease)
+- you display the next question. You will find the nextQuestion in the JSON file.
+- a null next question means the quiz is finished and you should present the results.
+- the result should be the best fitting shoe (by ranking) on top, and then a list of the remaining suggested shoes, ordered by top to bottom ranking
+
+## 3) Result screen - the frontend (30 mins)
+
+Build the UI of the result screen according to result.png found in the public folder
+
+- show the top ranked shoe
+- show the similar suggested shoes in order of ranking
+- show all the shoes details according to the design
+
+## 4) Recap (5 mins)
+
+5 mins buffer time to ask or answer any questions
