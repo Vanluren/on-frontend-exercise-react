@@ -1,13 +1,13 @@
-type ratingIncrease = Record<string, number>;
+type RatingIncrease = Record<string, number>;
 
 export interface Answer {
   id?: number;
   copy: string;
   nextQuestion: number | null;
-  ratingIncrease: ratingIncrease;
+  ratingIncrease: RatingIncrease;
 }
 
-export type UpdateRatingsFunction = (ratingIncrease: ratingIncrease) => void;
+export type UpdateRatingsFunction = (ratingIncrease: RatingIncrease) => void;
 
 export interface Question {
   id: number;
@@ -31,5 +31,5 @@ export interface QuizContextValue {
   currentQuestion: Question | undefined;
   setInitialData: (questions: Question[], shoes: Shoe[]) => void;
   updateRatings: UpdateRatingsFunction;
-  nextQuestion: (questionId: number) => void;
+  nextQuestion: (questionId: Question['id']) => void;
 }

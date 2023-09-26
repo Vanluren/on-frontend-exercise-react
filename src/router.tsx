@@ -1,8 +1,8 @@
-import { createBrowserRouter } from 'react-router-dom';
 import HomeScreen from '@/components/HomeScreen';
 import QuizScreen from '@/components/QuizScreen';
 import ResultsScreen from '@/components/ResultsScreen';
 import DefaultLayout from '@/layouts/Default';
+import { createBrowserRouter } from 'react-router-dom';
 
 const routes = [
   {
@@ -25,6 +25,4 @@ const routes = [
   },
 ];
 
-const router = createBrowserRouter(routes);
-
-export default router;
+export default createBrowserRouter(routes);
