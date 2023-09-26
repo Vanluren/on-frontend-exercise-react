@@ -11,7 +11,7 @@ const ResultsScreen = () => {
       <ul>
         {sortedShoes.map((shoe) => (
           <li key={shoe.id}>
-            <img src={`/public/images/shoes/${shoe.id}.png`} alt={shoe.name} />
+            <img src={`/images/shoes/${shoe.id}.png`} alt={shoe.name} />
             <h2>
               {shoe.name} rating: {shoe.rating}
             </h2>
