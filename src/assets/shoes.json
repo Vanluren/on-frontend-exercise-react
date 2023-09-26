@@ -1,0 +1,66 @@
+[
+  {
+    "id": "cloud",
+    "name": "Cloud",
+    "description": "Soft-touch fabrics meet the iconic Cloud silhouette in even more colorways.",
+    "price": "300 CHF",
+    "model": "Blue navy",
+    "rating": 0
+  },
+  {
+    "id": "cloudx",
+    "name": "Cloud X",
+    "description": "The lightweight and versatile trail running shoe for cushioned comfort.",
+    "price": "250 CHF",
+    "model": "Black | White",
+    "rating": 0
+  },
+  {
+    "id": "cloudflow",
+    "name": "Cloudflow",
+    "description": "Light, fast and fully cushioned. Take on training and racing in complete comfort.",
+    "price": "200 CHF",
+    "model": "Glaciar | Creek",
+    "rating": 0
+  },
+  {
+    "id": "cloudventure",
+    "name": "Cloudventure",
+    "description": "This third-generation trail running shoe is perfect on technical trails.",
+    "price": "250 CHF",
+    "model": "Olive | Fir",
+    "rating": 0
+  },
+  {
+    "id": "cloudsurfer",
+    "name": "Cloudsurfer",
+    "description": "The training shoe with computer-optimized technology for next-level cushioning.",
+    "price": "230 CHF",
+    "model": "Black | Cobalt",
+    "rating": 0
+  },
+  {
+    "id": "cloudventure_waterproof",
+    "name": "Cloudventure Waterproof",
+    "description": "This 100% waterproof trail running shoe is made with extreme cushioning and grip.",
+    "price": "260 CHF",
+    "model": "Black | Glacier",
+    "rating": 0
+  },
+  {
+    "id": "cloudventure_peak",
+    "name": "Cloudventure Peak",
+    "description": "Our lightest trail running shoe, now in its fastest form yet.",
+    "price": "230 CHF",
+    "model": "Glaciar | Creek",
+    "rating": 0
+  },
+  {
+    "id": "cloudflyer",
+    "name": "Cloudflyer",
+    "description": "Get ready for supreme cushioning and premium comfort. It’s time to run beyond.",
+    "price": "250 CHF",
+    "model": "Fossil | Flame",
+    "rating": 0
+  }
+]
