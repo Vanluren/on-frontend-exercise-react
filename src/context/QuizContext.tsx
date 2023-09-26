@@ -1,7 +1,11 @@
-import { Shoe, Question } from '@/types';
-import { useMemo, useState } from 'react';
+import { Question, QuizContextValue, Shoe } from '@/types';
+import React, { FunctionComponent, ReactNode, useContext, useEffect, useMemo, useState } from 'react';
+import questionData from '@/assets/questions.json';
+import shoesData from '@/assets/shoes.json';
 
-export const useQuizStore = () => {
+const QuizContext = React.createContext<QuizContextValue | null>(null);
+
+export const QuizProvider: FunctionComponent<{ children: ReactNode }> = ({ children }) => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [shoes, setShoes] = useState<Shoe[]>([]);
   const [currentQuestionId, setCurrentQuestionId] = useState(0);
@@ -28,7 +32,11 @@ export const useQuizStore = () => {
     setCurrentQuestionId(questionId);
   }
 
-  return {
+  useEffect(() => {
+    setInitialData(questionData, shoesData);
+  });
+
+  const contextValue = {
     questions,
     shoes,
     currentQuestionId,
@@ -37,4 +45,10 @@ export const useQuizStore = () => {
     updateRatings,
     nextQuestion,
   };
+
+  return <QuizContext.Provider value={contextValue}>{children}</QuizContext.Provider>;
+};
+
+export const useQuizStore = (): QuizContextValue => {
+  return useContext(QuizContext as React.Context<QuizContextValue>);
 };

@@ -23,3 +23,13 @@ export interface Shoe {
   model: string;
   rating: number;
 }
+
+export interface QuizContextValue {
+  questions: Question[];
+  shoes: Shoe[];
+  currentQuestionId: number;
+  currentQuestion: Question | undefined;
+  setInitialData: (questions: Question[], shoes: Shoe[]) => void;
+  updateRatings: UpdateRatingsFunction;
+  nextQuestion: (questionId: number) => void;
+}
