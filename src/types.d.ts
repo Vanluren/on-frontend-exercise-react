@@ -1,17 +1,17 @@
 type RatingIncrease = Record<string, number>;
 
+declare function setInitialData(questions: Question[], shoes: Shoe[]): void;
+
+declare function updateRatings(ratingIncrease: RatingIncrease): void;
+
+declare function nextQuestion(questionId: Question['id']): void;
+
 export interface Answer {
   id?: number;
   copy: string;
   nextQuestion: number | null;
   ratingIncrease: RatingIncrease;
 }
-
-declare function setInitialData(questions: Question[], shoes: Shoe[]): void;
-
-declare function updateRatings(ratingIncrease: RatingIncrease): void;
-
-declare function nextQuestion(questionId: Question['id']): void;
 
 export interface Question {
   id: number;
