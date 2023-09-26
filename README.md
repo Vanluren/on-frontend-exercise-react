@@ -11,7 +11,7 @@ The interview is structured in 3 phases:
 To run the project locally:
 
 - `yarn install`
-- `yarn dev`
+- `yarn start` or `yarn dev`
 
 To compile and minify for production
 
