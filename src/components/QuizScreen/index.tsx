@@ -1,4 +1,4 @@
-import { useQuizStore } from '@/context';
+import { useQuizStore } from '@/contexts/QuizContext';
 import { Answer } from '@/types';
 import { useNavigate } from 'react-router-dom';
 import './QuizScreen.scss';
