@@ -1,0 +1,60 @@
+// Typography
+*,
+small,
+body,
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'On';
+  margin: 0;
+}
+
+small {
+  font-size: 12px;
+}
+
+h3 {
+  font-size: 16px;
+}
+h2 {
+  font-size: 18px;
+}
+h1 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 14px;
+}
+
+// page styles
+.page {
+  height: 100%;
+  padding: 20px;
+}
+
+// Components
+button {
+  padding: 8px 40px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+
+  &.primary {
+    color: $color-white;
+    background-color: $color-dark-grey;
+    border-bottom: 3px solid $color-black;
+  }
+
+  &.secondary {
+    // secondary btn styles
+  }
+
+  &.outline {
+    color: $color-white;
+    background-color: $color-medium-grey;
+    border: 1px solid $color-white;
+  }
+}
