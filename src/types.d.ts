@@ -7,7 +7,11 @@ export interface Answer {
   ratingIncrease: RatingIncrease;
 }
 
-export type UpdateRatingsFunction = (ratingIncrease: RatingIncrease) => void;
+declare function setInitialData(questions: Question[], shoes: Shoe[]): void;
+
+declare function updateRatings(ratingIncrease: RatingIncrease): void;
+
+declare function nextQuestion(questionId: Question['id']): void;
 
 export interface Question {
   id: number;
@@ -24,12 +28,12 @@ export interface Shoe {
   rating: number;
 }
 
-export interface QuizContextValue {
+declare interface QuizContextValue {
   questions: Question[];
   shoes: Shoe[];
   currentQuestionId: number;
   currentQuestion: Question | undefined;
-  setInitialData: (questions: Question[], shoes: Shoe[]) => void;
-  updateRatings: UpdateRatingsFunction;
-  nextQuestion: (questionId: Question['id']) => void;
+  setInitialData: setInitialData;
+  updateRatings: updateRatings;
+  nextQuestion: nextQuestion;
 }
