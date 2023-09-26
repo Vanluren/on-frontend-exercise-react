@@ -1,6 +1,6 @@
 import questionData from '@/assets/questions.json';
 import shoesData from '@/assets/shoes.json';
-import { Question, QuizContextValue, Shoe } from '@/types';
+import type { Question, QuizContextValue, Shoe } from '@/types';
 import React, { FunctionComponent, ReactNode, useContext, useEffect, useMemo, useState } from 'react';
 
 const QuizContext = React.createContext<QuizContextValue | null>(null);

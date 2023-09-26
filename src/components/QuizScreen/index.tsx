@@ -1,5 +1,5 @@
 import { useQuizContext } from '@/contexts/QuizContext';
-import { Answer } from '@/types';
+import type { Answer } from '@/types';
 import { useNavigate } from 'react-router-dom';
 import './QuizScreen.scss';
 
